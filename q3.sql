@@ -1,8 +1,9 @@
--- Nom de regions par ordre alphabetique, cgef lieu, et pour chaque departement de la region : code, nom et prefecture
+-- Nom de regions par ordre alphabetique, chef lieu, et pour chaque departement de la region : code, nom et prefecture
 .output output_file.txt
 
+
 SELECT r.nom, r.chefLieu, d.code, d.nom, d.prefecture
-FROM regions r, departements d
-WHERE r.rid=d.rid
-GROUP BY r.nom
-ORDER BY r.nom;
+FROM departements d, regions r
+WHERE d.rid=r.rid
+GROUP BY d.nom
+ORDER BY r.nom ASC;
