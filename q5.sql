@@ -2,5 +2,5 @@
 
 .output output_file.txt
 
-SELECT count(*) as nb_voisins
+SELECT count(*) AS nb_voisins
 FROM voisins
