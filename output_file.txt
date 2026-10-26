@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ┌──────┬─────────────────────────┬──────────────────────┬─────┐
 │ code │           nom           │      prefecture      │ rid │
 ├──────┼─────────────────────────┼──────────────────────┼─────┤
@@ -103,3 +104,27 @@
 │ 974  │ La Réunion              │ Saint-Denis          │ LR  │
 │ 976  │ Mayotte                 │ Mamoudzou            │ MAY │
 └──────┴─────────────────────────┴──────────────────────┴─────┘
+=======
+┌────────────────────────────┬────────────────┬──────┬─────────────────────────┬──────────────────────┐
+│            nom             │    chefLieu    │ code │           nom           │      prefecture      │
+├────────────────────────────┼────────────────┼──────┼─────────────────────────┼──────────────────────┤
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 01   │ Ain                     │ Bourg-en-Bresse      │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 21   │ Côte-d'Or               │ Dijon                │
+│ Bretagne                   │ Rennes         │ 22   │ Côtes-d'Armor           │ Saint-Brieuc         │
+│ Centre-Val de Loire        │ Orléans        │ 18   │ Cher                    │ Bourges              │
+│ Corse                      │ Ajaccio        │ 2A   │ Corse-du-Sud            │ Ajaccio              │
+│ Grand Est                  │ Strasbourg     │ 08   │ Ardennes                │ Charleville-Mézières │
+│ Guadeloupe                 │ Basse-Terre    │ 971  │ Guadeloupe              │ Basse-Terre          │
+│ Guyane                     │ Cayenne        │ 973  │ Guyane                  │ Cayenne              │
+│ Hauts-de-France            │ Lille          │ 02   │ Aisne                   │ Laon                 │
+│ Ile-de-France              │ Paris          │ 75   │ Paris                   │ Paris                │
+│ La Réunion                 │ Saint-Denis    │ 974  │ La Réunion              │ Saint-Denis          │
+│ Martinique                 │ Fort-de-France │ 972  │ Martinique              │ Fort-de-France       │
+│ Mayotte                    │ Mamoudzou      │ 976  │ Mayotte                 │ Mamoudzou            │
+│ Normandie                  │ Rouen          │ 14   │ Calvados                │ Caen                 │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 16   │ Charente                │ Angoulême            │
+│ Occitanie                  │ Toulouse       │ 09   │ Ariège                  │ Foix                 │
+│ Pays de la Loire           │ Nantes         │ 44   │ Loire-Atlantique        │ Nantes               │
+│ Provence-Alpes-Côte d'Azur │ Marseille      │ 04   │ Alpes-de-Haute-Provence │ Digne-les-Bains      │
+└────────────────────────────┴────────────────┴──────┴─────────────────────────┴──────────────────────┘
+>>>>>>> 11b9dc69142b8324e40de5efe14b5563a2be59fa

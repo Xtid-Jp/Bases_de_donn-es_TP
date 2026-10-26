@@ -1,0 +1,27 @@
+1. Donnez les commandes SQL nécessaires pour créer deux tables regions (rid, nom, chefLieu) et departements (code, nom, prefecture, rid), en respectant les contraintes de type des attributs, ainsi que les contraintes de clés primaires et étrangères. Populez ces deux tables avec les données des fichiers csv.
+
+2. Donnez une requête SQL qui retourne le code et le nom du département qui a la préfecture à Bourges.
+
+3. Donnez une requête SQL qui retourne, pour chaque département: le code, le nom, la préfecture et le nom de sa région.
+
+4. Donnez une requête SQL qui retourne les noms de régions (en ordre alphabétique) avec le chef lieu, ainsi que pour chaque département de la région le code, le nom et la préfecture.
+
+5. Donnez une requête SQL qui retourne le code, le nom et la préfecture de tous les départements de la région Centre-Val de Loire.
+
+6. Créez une table voisins (rid1, rid2) avec les bonnes contraintes de clés primaires et étrangères, et populez cette table avec les données du fichier csv. Donnez une requête SQL qui retourne le nombre total de tuples dans la table.
+
+7. Proposez une view voisinsSym qui construit la clôture symétrique de la relation voisins. Donnez une requête SQL qui retourne le nombre total de tuples dans votre view et comparez avec le nombre obtenu à la question précédente.
+
+8. Créez une nouvelle view voisinsSymNoms, qui utilise la précédente et qui contient les relations de voisinage entre des noms de régions et pas des identifiants. En utilisant cette view, comptez le nombre de voisins par région, triés par ordre décroissant (les régions sans voisins doivent aussi apparaître, avec compteur 0).
+
+9. Créez une table zus (departement, commune, quartier), avec les bonnes contraintes de clés primaires et étrangères, et populez cette table avec les données du fichier csv.
+
+10. Donnez une requête SQL pour trouver les ZUS qui se trouvent dans plusieurs départements alors qu'il s'agit du même quartier et des mêmes communes.
+
+11. Créez une view qui sélectionne les ZUS qui se trouvent dans les communes qui sont préfectures de leur département. Donnez la requête SQL qui utilise cette view afin de retourner le nombre de ZUS dans des communes préfecture ou dans d'autres communes, ainsi que le total.
+
+12. Donnez une requête SQL qui compte, en ordre décroissant, le nombre de ZUS de chaque département, en incluant aussi sa région dans le résultat (en faisant aussi apparaître les départements sans ZUS avec compteur 0).
+
+13. Donnez une requête SQL qui compte, en ordre décroissant, le nombre de ZUS de chaque région.
+
+14. Donnez deux formulations différentes pour la requête qui retourne les noms des régions pour lesquelles tous les départements ont au moins un ZUS.
