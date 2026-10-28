@@ -127,17 +127,6 @@ FROM regions r LEFT JOIN voisinsSymNoms vs ON (r.nom = vs.region1)
 GROUP BY r.nom
 ORDER BY nb_voisins DESC;
 
--- 10. Donnez une requête SQL pour trouver les ZUS qui se trouvent dans plusieurs départements alors qu'il s'agit du même quartier et des mêmes communes.
-SELECT *
-FROM zus
-WHERE commune LIKE '%(%)%';
-
---11. Créez une view qui sélectionne les ZUS qui se trouvent dans les communes qui sont préfectures de leur département. 
--- requête qui utilise cette view afin de retourner le nombre de ZUS dans des communes préfecture ou dans d'autres communes, ainsi que le total.
-
-DROP VIEW IF EXISTS
-
-
 -- Exercice 09 
 
 /* 
