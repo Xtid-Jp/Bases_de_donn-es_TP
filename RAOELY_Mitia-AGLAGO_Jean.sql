@@ -2,6 +2,8 @@
 -- Création des tables
 
 PRAGMA foreign_keys = ON; --On a besoin de cette commande pour activer les contraintes de clés étrangères
+
+DROP TABLE IF EXISTS zus;
 DROP TABLE IF EXISTS voisins;
 DROP TABLE IF EXISTS departements;
 DROP TABLE IF EXISTS regions;
@@ -18,6 +20,14 @@ CREATE TABLE departements (
     prefecture VARCHAR(100) NOT NULL,
     rid VARCHAR(3) NOT NULL,
     FOREIGN KEY (rid) REFERENCES regions(rid)
+);
+
+CREATE TABLE voisins (
+    rid1 VARCHAR(3) NOT NULL,
+    rid2 VARCHAR(3) NOT NULL,
+    PRIMARY KEY (rid1, rid2), -- Pour éviter des doublons
+    FOREIGN KEY (rid1) REFERENCES regions(rid),
+    FOREIGN KEY (rid2) REFERENCES regions(rid)
 );
 
 CREATE TABLE zus (
@@ -56,7 +66,7 @@ JOIN regions r ON r.rid = d.rid
 ORDER BY d.code ASC;
 
 -- Exercice 04
--- Nom de regions par ordre alphabetique, cgef lieu, et pour chaque departement de la region : code, nom et prefecture
+-- Nom de regions par ordre alphabetique, chef lieu, et pour chaque departement de la region : code, nom et prefecture
 
 SELECT r.nom, r.chefLieu, d.code, d.nom, d.prefecture
 FROM regions r, departements d
@@ -70,19 +80,11 @@ ORDER BY r.nom;
 SELECT d.code, d.nom, d.prefecture
 FROM departements d
 JOIN regions r ON (d.rid = r.rid)
-where r.rid='Centre-Val de Loire'
+where r.nom='Centre-Val de Loire';
 
 -- Exercice 06
 
-DROP TABLE IF EXISTS zus;
 
-CREATE TABLE voisins (
-    rid1 VARCHAR(3) NOT NULL,
-    rid2 VARCHAR(3) NOT NULL,
-    PRIMARY KEY (rid1, rid2), -- Pour éviter des doublons
-    FOREIGN KEY (rid1) REFERENCES regions(rid),
-    FOREIGN KEY (rid2) REFERENCES regions(rid)
-);
 
 
 
@@ -93,7 +95,7 @@ CREATE TABLE voisins (
 -- Nombre total de tuples dans la table
 
 SELECT count(*) AS nb_voisins
-FROM voisins
+FROM voisins;
 
 -- Exercice 07
 -- Une view qui construit la clôture symétrique de la relation voisins
@@ -115,7 +117,6 @@ FROM voisinsSym;
 --Exercice 08
 -- Une view qui contient les relations de voisinage entre des noms de régions et pas des identifiants
 
-.output output_file.txt
 
 DROP VIEW IF EXISTS voisinsSymNoms;
 
@@ -130,7 +131,6 @@ FROM regions r LEFT JOIN voisinsSymNoms vs ON (r.nom = vs.region1)
 GROUP BY r.nom
 ORDER BY nb_voisins DESC;
 
--- Exercice 09
 
 
 
