@@ -1,130 +1,105 @@
-<<<<<<< HEAD
-┌──────┬─────────────────────────┬──────────────────────┬─────┐
-│ code │           nom           │      prefecture      │ rid │
-├──────┼─────────────────────────┼──────────────────────┼─────┤
-│ 01   │ Ain                     │ Bourg-en-Bresse      │ ARA │
-│ 02   │ Aisne                   │ Laon                 │ HDF │
-│ 03   │ Allier                  │ Moulins              │ ARA │
-│ 04   │ Alpes-de-Haute-Provence │ Digne-les-Bains      │ PAC │
-│ 05   │ Hautes-Alpes            │ Gap                  │ PAC │
-│ 06   │ Alpes-Maritimes         │ Nice                 │ PAC │
-│ 07   │ Ardèche                 │ Privas               │ ARA │
-│ 08   │ Ardennes                │ Charleville-Mézières │ GES │
-│ 09   │ Ariège                  │ Foix                 │ OCC │
-│ 10   │ Aube                    │ Troyes               │ GES │
-│ 11   │ Aude                    │ Carcassonne          │ OCC │
-│ 12   │ Aveyron                 │ Rodez                │ OCC │
-│ 13   │ Bouches-du-Rhône        │ Marseille            │ PAC │
-│ 14   │ Calvados                │ Caen                 │ NOR │
-│ 15   │ Cantal                  │ Aurillac             │ ARA │
-│ 16   │ Charente                │ Angoulême            │ NAQ │
-│ 17   │ Charente-Maritime       │ La Rochelle          │ NAQ │
-│ 18   │ Cher                    │ Bourges              │ CVL │
-│ 19   │ Corrèze                 │ Tulle                │ NAQ │
-│ 21   │ Côte-d'Or               │ Dijon                │ BFC │
-│ 22   │ Côtes-d'Armor           │ Saint-Brieuc         │ BRE │
-│ 23   │ Creuse                  │ Guéret               │ NAQ │
-│ 24   │ Dordogne                │ Périgueux            │ NAQ │
-│ 25   │ Doubs                   │ Besançon             │ BFC │
-│ 26   │ Drôme                   │ Valence              │ ARA │
-│ 27   │ Eure                    │ Évreux               │ NOR │
-│ 28   │ Eure-et-Loir            │ Chartres             │ CVL │
-│ 29   │ Finistère               │ Quimper              │ BRE │
-│ 2A   │ Corse-du-Sud            │ Ajaccio              │ COR │
-│ 2B   │ Haute-Corse             │ Bastia               │ COR │
-│ 30   │ Gard                    │ Nîmes                │ OCC │
-│ 31   │ Haute-Garonne           │ Toulouse             │ OCC │
-│ 32   │ Gers                    │ Auch                 │ OCC │
-│ 33   │ Gironde                 │ Bordeaux             │ NAQ │
-│ 34   │ Hérault                 │ Montpellier          │ OCC │
-│ 35   │ Ille-et-Vilaine         │ Rennes               │ BRE │
-│ 36   │ Indre                   │ Châteauroux          │ CVL │
-│ 37   │ Indre-et-Loire          │ Tours                │ CVL │
-│ 38   │ Isère                   │ Grenoble             │ ARA │
-│ 39   │ Jura                    │ Lons-le-Saunier      │ BFC │
-│ 40   │ Landes                  │ Mont-de-Marsan       │ NAQ │
-│ 41   │ Loir-et-Cher            │ Blois                │ CVL │
-│ 42   │ Loire                   │ Saint-Étienne        │ ARA │
-│ 43   │ Haute-Loire             │ Le Puy-en-Velay      │ ARA │
-│ 44   │ Loire-Atlantique        │ Nantes               │ PDL │
-│ 45   │ Loiret                  │ Orléans              │ CVL │
-│ 46   │ Lot                     │ Cahors               │ OCC │
-│ 47   │ Lot-et-Garonne          │ Agen                 │ NAQ │
-│ 48   │ Lozère                  │ Mende                │ OCC │
-│ 49   │ Maine-et-Loire          │ Angers               │ PDL │
-│ 50   │ Manche                  │ Saint-Lô             │ NOR │
-│ 51   │ Marne                   │ Châlons-en-Champagne │ GES │
-│ 52   │ Haute-Marne             │ Chaumont             │ GES │
-│ 53   │ Mayenne                 │ Laval                │ PDL │
-│ 54   │ Meurthe-et-Moselle      │ Nancy                │ GES │
-│ 55   │ Meuse                   │ Bar-le-Duc           │ GES │
-│ 56   │ Morbihan                │ Vannes               │ BRE │
-│ 57   │ Moselle                 │ Metz                 │ GES │
-│ 58   │ Nièvre                  │ Nevers               │ BFC │
-│ 59   │ Nord                    │ Lille                │ HDF │
-│ 60   │ Oise                    │ Beauvais             │ HDF │
-│ 61   │ Orne                    │ Alençon              │ NOR │
-│ 62   │ Pas-de-Calais           │ Arras                │ HDF │
-│ 63   │ Puy-de-Dôme             │ Clermont-Ferrand     │ ARA │
-│ 64   │ Pyrénées-Atlantiques    │ Pau                  │ NAQ │
-│ 65   │ Hautes-Pyrénées         │ Tarbes               │ OCC │
-│ 66   │ Pyrénées-Orientales     │ Perpignan            │ OCC │
-│ 67   │ Bas-Rhin                │ Strasbourg           │ GES │
-│ 68   │ Haut-Rhin               │ Colmar               │ GES │
-│ 69   │ Rhône                   │ Lyon                 │ ARA │
-│ 70   │ Haute-Saône             │ Vesoul               │ BFC │
-│ 71   │ Saône-et-Loire          │ Mâcon                │ BFC │
-│ 72   │ Sarthe                  │ Le Mans              │ PDL │
-│ 73   │ Savoie                  │ Chambéry             │ ARA │
-│ 74   │ Haute-Savoie            │ Annecy               │ ARA │
-│ 75   │ Paris                   │ Paris                │ IDF │
-│ 76   │ Seine-Maritime          │ Rouen                │ NOR │
-│ 77   │ Seine-et-Marne          │ Melun                │ IDF │
-│ 78   │ Yvelines                │ Versailles           │ IDF │
-│ 79   │ Deux-Sèvres             │ Niort                │ NAQ │
-│ 80   │ Somme                   │ Amiens               │ HDF │
-│ 81   │ Tarn                    │ Albi                 │ OCC │
-│ 82   │ Tarn-et-Garonne         │ Montauban            │ OCC │
-│ 83   │ Var                     │ Toulon               │ PAC │
-│ 84   │ Vaucluse                │ Avignon              │ PAC │
-│ 85   │ Vendée                  │ La Roche-sur-Yon     │ PDL │
-│ 86   │ Vienne                  │ Poitiers             │ NAQ │
-│ 87   │ Haute-Vienne            │ Limoges              │ NAQ │
-│ 88   │ Vosges                  │ Épinal               │ GES │
-│ 89   │ Yonne                   │ Auxerre              │ BFC │
-│ 90   │ Territoire de Belfort   │ Belfort              │ BFC │
-│ 91   │ Essonne                 │ Évry-Courcouronnes   │ IDF │
-│ 92   │ Hauts-de-Seine          │ Nanterre             │ IDF │
-│ 93   │ Seine-Saint-Denis       │ Bobigny              │ IDF │
-│ 94   │ Val-de-Marne            │ Créteil              │ IDF │
-│ 95   │ Val-d'Oise              │ Cergy-Pontoise       │ IDF │
-│ 971  │ Guadeloupe              │ Basse-Terre          │ GUA │
-│ 972  │ Martinique              │ Fort-de-France       │ MAR │
-│ 973  │ Guyane                  │ Cayenne              │ GUY │
-│ 974  │ La Réunion              │ Saint-Denis          │ LR  │
-│ 976  │ Mayotte                 │ Mamoudzou            │ MAY │
-└──────┴─────────────────────────┴──────────────────────┴─────┘
-=======
-┌────────────────────────────┬────────────────┬──────┬─────────────────────────┬──────────────────────┐
-│            nom             │    chefLieu    │ code │           nom           │      prefecture      │
-├────────────────────────────┼────────────────┼──────┼─────────────────────────┼──────────────────────┤
-│ Auvergne-Rhône-Alpes       │ Lyon           │ 01   │ Ain                     │ Bourg-en-Bresse      │
-│ Bourgogne-Franche-Comté    │ Dijon          │ 21   │ Côte-d'Or               │ Dijon                │
-│ Bretagne                   │ Rennes         │ 22   │ Côtes-d'Armor           │ Saint-Brieuc         │
-│ Centre-Val de Loire        │ Orléans        │ 18   │ Cher                    │ Bourges              │
-│ Corse                      │ Ajaccio        │ 2A   │ Corse-du-Sud            │ Ajaccio              │
-│ Grand Est                  │ Strasbourg     │ 08   │ Ardennes                │ Charleville-Mézières │
-│ Guadeloupe                 │ Basse-Terre    │ 971  │ Guadeloupe              │ Basse-Terre          │
-│ Guyane                     │ Cayenne        │ 973  │ Guyane                  │ Cayenne              │
-│ Hauts-de-France            │ Lille          │ 02   │ Aisne                   │ Laon                 │
-│ Ile-de-France              │ Paris          │ 75   │ Paris                   │ Paris                │
-│ La Réunion                 │ Saint-Denis    │ 974  │ La Réunion              │ Saint-Denis          │
-│ Martinique                 │ Fort-de-France │ 972  │ Martinique              │ Fort-de-France       │
-│ Mayotte                    │ Mamoudzou      │ 976  │ Mayotte                 │ Mamoudzou            │
-│ Normandie                  │ Rouen          │ 14   │ Calvados                │ Caen                 │
-│ Nouvelle-Aquitaine         │ Bordeaux       │ 16   │ Charente                │ Angoulême            │
-│ Occitanie                  │ Toulouse       │ 09   │ Ariège                  │ Foix                 │
-│ Pays de la Loire           │ Nantes         │ 44   │ Loire-Atlantique        │ Nantes               │
-│ Provence-Alpes-Côte d'Azur │ Marseille      │ 04   │ Alpes-de-Haute-Provence │ Digne-les-Bains      │
-└────────────────────────────┴────────────────┴──────┴─────────────────────────┴──────────────────────┘
->>>>>>> 11b9dc69142b8324e40de5efe14b5563a2be59fa
+┌─────────────────────────┬────────────────────────────┬─────────────┐
+│       departement       │         nom_region         │ nb_dept_zus │
+├─────────────────────────┼────────────────────────────┼─────────────┤
+│ Nord                    │ Hauts-de-France            │ 49          │
+│ Seine-Saint-Denis       │ Ile-de-France              │ 36          │
+│ Rhône                   │ Auvergne-Rhône-Alpes       │ 30          │
+│ Bouches-du-Rhône        │ Provence-Alpes-Côte d'Azur │ 29          │
+│ Essonne                 │ Ile-de-France              │ 26          │
+│ Pas-de-Calais           │ Hauts-de-France            │ 24          │
+│ Val-de-Marne            │ Ile-de-France              │ 23          │
+│ Moselle                 │ Grand Est                  │ 22          │
+│ Val-d'Oise              │ Ile-de-France              │ 22          │
+│ Seine-Maritime          │ Normandie                  │ 20          │
+│ Yvelines                │ Ile-de-France              │ 16          │
+│ Hauts-de-Seine          │ Ile-de-France              │ 16          │
+│ La Réunion              │ La Réunion                 │ 15          │
+│ Doubs                   │ Bourgogne-Franche-Comté    │ 13          │
+│ Gironde                 │ Nouvelle-Aquitaine         │ 13          │
+│ Hérault                 │ Occitanie                  │ 13          │
+│ Marne                   │ Grand Est                  │ 13          │
+│ Isère                   │ Auvergne-Rhône-Alpes       │ 12          │
+│ Eure-et-Loir            │ Centre-Val de Loire        │ 10          │
+│ Gard                    │ Occitanie                  │ 10          │
+│ Loire-Atlantique        │ Pays de la Loire           │ 10          │
+│ Maine-et-Loire          │ Pays de la Loire           │ 10          │
+│ Bas-Rhin                │ Grand Est                  │ 10          │
+│ Meurthe-et-Moselle      │ Grand Est                  │ 9           │
+│ Haut-Rhin               │ Grand Est                  │ 9           │
+│ Paris                   │ Ile-de-France              │ 9           │
+│ Seine-et-Marne          │ Ile-de-France              │ 9           │
+│ Aisne                   │ Hauts-de-France            │ 8           │
+│ Allier                  │ Auvergne-Rhône-Alpes       │ 8           │
+│ Ardennes                │ Grand Est                  │ 8           │
+│ Aube                    │ Grand Est                  │ 8           │
+│ Loire                   │ Auvergne-Rhône-Alpes       │ 8           │
+│ Oise                    │ Hauts-de-France            │ 8           │
+│ Puy-de-Dôme             │ Auvergne-Rhône-Alpes       │ 8           │
+│ Guadeloupe              │ Guadeloupe                 │ 8           │
+│ Ille-et-Vilaine         │ Bretagne                   │ 7           │
+│ Var                     │ Provence-Alpes-Côte d'Azur │ 7           │
+│ Yonne                   │ Bourgogne-Franche-Comté    │ 7           │
+│ Drôme                   │ Auvergne-Rhône-Alpes       │ 6           │
+│ Morbihan                │ Bretagne                   │ 6           │
+│ Pyrénées-Atlantiques    │ Nouvelle-Aquitaine         │ 6           │
+│ Saône-et-Loire          │ Bourgogne-Franche-Comté    │ 6           │
+│ Tarn                    │ Occitanie                  │ 6           │
+│ Vaucluse                │ Provence-Alpes-Côte d'Azur │ 6           │
+│ Martinique              │ Martinique                 │ 6           │
+│ Alpes-Maritimes         │ Provence-Alpes-Côte d'Azur │ 5           │
+│ Charente                │ Nouvelle-Aquitaine         │ 5           │
+│ Charente-Maritime       │ Nouvelle-Aquitaine         │ 5           │
+│ Côte-d'Or               │ Bourgogne-Franche-Comté    │ 5           │
+│ Eure                    │ Normandie                  │ 5           │
+│ Haute-Garonne           │ Occitanie                  │ 5           │
+│ Indre-et-Loire          │ Centre-Val de Loire        │ 5           │
+│ Loiret                  │ Centre-Val de Loire        │ 5           │
+│ Orne                    │ Normandie                  │ 5           │
+│ Sarthe                  │ Pays de la Loire           │ 5           │
+│ Somme                   │ Hauts-de-France            │ 5           │
+│ Vosges                  │ Grand Est                  │ 5           │
+│ Calvados                │ Normandie                  │ 4           │
+│ Cher                    │ Centre-Val de Loire        │ 4           │
+│ Finistère               │ Bretagne                   │ 4           │
+│ Corse-du-Sud            │ Corse                      │ 4           │
+│ Nièvre                  │ Bourgogne-Franche-Comté    │ 4           │
+│ Haute-Saône             │ Bourgogne-Franche-Comté    │ 4           │
+│ Guyane                  │ Guyane                     │ 4           │
+│ Aude                    │ Occitanie                  │ 3           │
+│ Côtes-d'Armor           │ Bretagne                   │ 3           │
+│ Indre                   │ Centre-Val de Loire        │ 3           │
+│ Jura                    │ Bourgogne-Franche-Comté    │ 3           │
+│ Loir-et-Cher            │ Centre-Val de Loire        │ 3           │
+│ Manche                  │ Normandie                  │ 3           │
+│ Mayenne                 │ Pays de la Loire           │ 3           │
+│ Vienne                  │ Nouvelle-Aquitaine         │ 3           │
+│ Haute-Vienne            │ Nouvelle-Aquitaine         │ 3           │
+│ Territoire de Belfort   │ Bourgogne-Franche-Comté    │ 3           │
+│ Ain                     │ Auvergne-Rhône-Alpes       │ 2           │
+│ Ardèche                 │ Auvergne-Rhône-Alpes       │ 2           │
+│ Landes                  │ Nouvelle-Aquitaine         │ 2           │
+│ Lot-et-Garonne          │ Nouvelle-Aquitaine         │ 2           │
+│ Haute-Marne             │ Grand Est                  │ 2           │
+│ Meuse                   │ Grand Est                  │ 2           │
+│ Hautes-Pyrénées         │ Occitanie                  │ 2           │
+│ Pyrénées-Orientales     │ Occitanie                  │ 2           │
+│ Savoie                  │ Auvergne-Rhône-Alpes       │ 2           │
+│ Haute-Savoie            │ Auvergne-Rhône-Alpes       │ 2           │
+│ Alpes-de-Haute-Provence │ Provence-Alpes-Côte d'Azur │ 1           │
+│ Aveyron                 │ Occitanie                  │ 1           │
+│ Dordogne                │ Nouvelle-Aquitaine         │ 1           │
+│ Haute-Corse             │ Corse                      │ 1           │
+│ Haute-Loire             │ Auvergne-Rhône-Alpes       │ 1           │
+│ Deux-Sèvres             │ Nouvelle-Aquitaine         │ 1           │
+│ Vendée                  │ Pays de la Loire           │ 1           │
+│ Mayotte                 │ Mayotte                    │ 1           │
+│ Hautes-Alpes            │ Provence-Alpes-Côte d'Azur │ 0           │
+│ Ariège                  │ Occitanie                  │ 0           │
+│ Cantal                  │ Auvergne-Rhône-Alpes       │ 0           │
+│ Corrèze                 │ Nouvelle-Aquitaine         │ 0           │
+│ Creuse                  │ Nouvelle-Aquitaine         │ 0           │
+│ Gers                    │ Occitanie                  │ 0           │
+│ Lot                     │ Occitanie                  │ 0           │
+│ Lozère                  │ Occitanie                  │ 0           │
+│ Tarn-et-Garonne         │ Occitanie                  │ 0           │
+└─────────────────────────┴────────────────────────────┴─────────────┘
